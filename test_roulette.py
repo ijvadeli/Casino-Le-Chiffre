@@ -68,7 +68,7 @@ def test_er_zijn_achttien_rode_en_achttien_zwarte_vakjes():
 
 def test_vakje_37_bestaat_niet():
     with pytest.raises(ValueError):
-        kleur_van(37)
+        kleur_van(36) # Change to 37, for wrong test
 
 
 # ------------------------------------------------------------------
@@ -94,7 +94,7 @@ def test_inzet_op_nul_wint_wel_bij_nul():
 
 
 def test_tweede_dozijn_wint_bij_vierentwintig():
-    assert is_winnende_inzet("dozijn2", None, 20) is True # Must be 24
+    assert is_winnende_inzet("dozijn2", None, 24) is True
 
 
 def test_tweede_dozijn_verliest_bij_vijfentwintig():
