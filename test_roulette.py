@@ -100,6 +100,12 @@ def test_tweede_dozijn_wint_bij_vierentwintig():
 def test_tweede_dozijn_verliest_bij_vijfentwintig():
     assert is_winnende_inzet("dozijn2", None, 25) is False
 
+# Mijn eigen tests
+def test_derde_dozijn_wint_bij_vijfentwintig():
+    assert is_winnende_inzet("dozijn3", None, 25) is True
+
+def test_derde_dozijn_verliest_bij_vierentwintig():
+    assert is_winnende_inzet("dozijn3", None, 24) is False
 
 # ------------------------------------------------------------------
 # bereken_uitbetaling
@@ -141,7 +147,6 @@ def test_saldo_na_verlies():
 def test_meer_inzetten_dan_je_saldo_mag_niet():
     with pytest.raises(ValueError):
         nieuw_saldo(50, 60, 0)
-
 
 # ------------------------------------------------------------------
 # simuleer
