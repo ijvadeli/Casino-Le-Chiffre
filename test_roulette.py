@@ -68,7 +68,7 @@ def test_er_zijn_achttien_rode_en_achttien_zwarte_vakjes():
 
 def test_vakje_37_bestaat_niet():
     with pytest.raises(ValueError):
-        kleur_van(36) # Change to 37, for wrong test
+        kleur_van(37) # Change to 36 for wrong test
 
 
 # ------------------------------------------------------------------
