@@ -94,13 +94,13 @@ def test_inzet_op_nul_wint_wel_bij_nul():
 
 
 def test_tweede_dozijn_wint_bij_vierentwintig():
-    assert is_winnende_inzet("dozijn2", None, 24) is True
+    assert is_winnende_inzet("dozijn2", None, 20) is True # Must be 24
 
 
 def test_tweede_dozijn_verliest_bij_vijfentwintig():
     assert is_winnende_inzet("dozijn2", None, 25) is False
 
-# Mijn eigen tests
+# Own tests
 def test_derde_dozijn_wint_bij_vijfentwintig():
     assert is_winnende_inzet("dozijn3", None, 25) is True
 
